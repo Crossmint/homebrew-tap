@@ -5,17 +5,17 @@ class Crossmint < Formula
   
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Paella-Labs/crossbit-main/releases/download/v/crossmint-macos-x64.tar.gz"
-      sha256 "f1339f35d7c17a6ccec7f02524e4881d3b49e5d6fd89b4a76d6f2410aac1c282"
+      url "https://github.com/Paella-Labs/crossbit-main/releases/download/v0.0.11/crossmint-macos-x64.tar.gz"
+      sha256 "9903861572875c32b2ef603db5f3af900d40fd69993c7cdeea2f9f1d9189afab"
     else
-      url "https://github.com/Paella-Labs/crossbit-main/releases/download/v/crossmint-macos-arm64.tar.gz"
-      sha256 "beb3b7a69d7774270c908173d81e254c510f580a215ab4f11e50b4b71861b462"
+      url "https://github.com/Paella-Labs/crossbit-main/releases/download/v0.0.11/crossmint-macos-arm64.tar.gz"
+      sha256 "792211b081296d0a23029a63bcd7ee64d5b7a014d88fd7843e30bc7634d8c6c1"
     end
   end
   
   on_linux do
-    url "https://github.com/Paella-Labs/crossbit-main/releases/download/v/crossmint-linux-x64.tar.gz"
-    sha256 "2e734b45fa12e402273d2a38b9be000fe6ca1dd64693d44e922ba31376f346e3"
+    url "https://github.com/Paella-Labs/crossbit-main/releases/download/v0.0.11/crossmint-linux-x64.tar.gz"
+    sha256 "a925780b14ab94c9bb16f522f42eec93cad95500c393401010ac0dd6dcaf6128"
   end
   
   def install
