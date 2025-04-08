@@ -5,17 +5,17 @@ class Crossmint < Formula
   
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Crossmint/homebrew-tap/releases/download/v0.0.25/crossmint-macos-x64.tar.gz"
-      sha256 "72af99aef5c8e5c9d1a5eb4f4a692edba167b2a8fb7180b6f686dd01f39e4889"
+      url "https://github.com/Crossmint/homebrew-tap/releases/download/v0.0.29/crossmint-macos-x64.tar.gz"
+      sha256 "4b1a79244be0212ba06ee950a1ff6ec066a5015b555076629da826e1296486f5"
     else
-      url "https://github.com/Crossmint/homebrew-tap/releases/download/v0.0.25/crossmint-macos-arm64.tar.gz"
-      sha256 "4c010ae328054c79f0d09514da56836907c9c10a6bf3937a3ba47cf77de4e848"
+      url "https://github.com/Crossmint/homebrew-tap/releases/download/v0.0.29/crossmint-macos-arm64.tar.gz"
+      sha256 "10cb33eaaf4f74d4295f57b563b831158538f85fdc4361379a58dd85322a8113"
     end
   end
   
   on_linux do
-    url "https://github.com/Crossmint/homebrew-tap/releases/download/v0.0.25/crossmint-linux-x64.tar.gz"
-    sha256 "1b34dd0a0247e47c1901b10c2a5c743e36b7fc8633dcc9ca7a7ad94dbed1139b"
+    url "https://github.com/Crossmint/homebrew-tap/releases/download/v0.0.29/crossmint-linux-x64.tar.gz"
+    sha256 "ece125c4a9042556eb03f47a2ee922c119bddd50126739745c4143ec918c8011"
   end
   
   def install
