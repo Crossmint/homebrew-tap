@@ -2,6 +2,7 @@ class Crossmint < Formula
   desc "Crossmint CLI"
   homepage "https://github.com/Crossmint/homebrew-tap"
   license "MIT"
+  version "0.2.1"
   
   on_macos do
     if Hardware::CPU.intel?
