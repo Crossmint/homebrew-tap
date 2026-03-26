@@ -11,7 +11,13 @@ class OpensignerDesktop < Formula
   def install
     odie "opensigner-desktop currently supports Apple Silicon Macs only" if Hardware::CPU.intel?
 
-    libexec.install "OpenSigner.app"
+    app_source = buildpath/"OpenSigner.app"
+    if !app_source.exist? && (buildpath/"Contents").exist?
+      app_source.mkpath
+      mv buildpath/"Contents", app_source/"Contents"
+    end
+
+    libexec.install app_source
     bin.install_symlink libexec/"OpenSigner.app/Contents/MacOS/opensigner" => "opensigner-desktop"
   end
 
